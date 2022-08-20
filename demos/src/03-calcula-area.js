@@ -3,11 +3,16 @@ function areaTriangulo(base, altura){
 }
 
 function areaCuadrado(lado1, lado2){
+
+  if(lado1 !== lado2){
+    return null
+  }
+
   return lado1*lado2
 }
 
 function areaCirculo(radio){
-  return 3.1416 * (radio * radio)
+  return 3.1416 * Math.pow(radio,2)
 }
 
 
